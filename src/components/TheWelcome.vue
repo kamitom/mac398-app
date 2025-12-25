@@ -83,7 +83,7 @@
     <template #icon>
       <SupportIcon />
     </template>
-    <template #heading>Support Vue</template>
+    <template #heading>CHINE-YU 🇹🇼 Support Vue</template>
 
     As an independent project, Vue relies on community backing for its sustainability. You can help
     us by
