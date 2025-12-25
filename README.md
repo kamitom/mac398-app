@@ -65,3 +65,30 @@ npm run test:e2e -- tests/example.spec.ts
 # Runs the tests in debug mode
 npm run test:e2e -- --debug
 ```
+
+## Docker Deployment
+
+### Build Docker Image
+
+```sh
+docker build -t tom4dock/mac398fe:3.0 .
+```
+
+### Run Container
+
+```sh
+# Run in background
+docker run -d -p 30003:80 tom4dock/mac398fe:3.0
+
+# View logs
+docker logs <container-id>
+
+# Stop container
+docker stop <container-id>
+```
+
+### Access Application
+
+The application will be available at `http://localhost:30003` or your server's IP:30003.
+
+**Note**: The Nginx configuration uses `try_files` to route all requests to `index.html`, enabling Vue Router to handle client-side routing. This means any non-existent routes will be served `index.html` and handled by Vue Router.
