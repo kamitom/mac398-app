@@ -8,7 +8,7 @@
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="正式區！" />
+      <HelloWorld msg="練習CI(gh Actions)" />
     </div>
   </header>
 
