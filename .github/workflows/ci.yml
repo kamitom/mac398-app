@@ -11,8 +11,7 @@ on:
       - 'hotfix/**'
       - 'release/**'
       - 'bugfix/**'
-    branches-ignore:
-      - 'feature/wip/**' # feature/wip 開頭的不觸發
+      - '!feature/wip/**'
   pull_request:
     branches:
       - main
