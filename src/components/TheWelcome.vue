@@ -25,7 +25,7 @@
     <template #icon>
       <ToolingIcon />
     </template>
-    <template #heading>Tooling 測試測試v2</template>
+    <template #heading>Tooling 阿樹遊🇨🇳</template>
 
     This project is served and bundled with
     <a href="https://vite.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The

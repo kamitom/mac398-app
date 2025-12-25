@@ -20,6 +20,8 @@ services:
       - /usr/mac398-app/node_modules
       - ./:/usr/mac398-app
     command: npm run test:unit
+    networks:
+      - mac398net
 
 networks:
   mac398net:
