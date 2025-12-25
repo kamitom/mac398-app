@@ -14,7 +14,7 @@
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
+    <template #heading>🇺🇸 Documentation 🇩🇪 </template>
 
     測試測試！！Vue’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>

@@ -1,0 +1,17 @@
+services:
+  mac398fe:
+    image: tom4dock/mac398fe:1.1
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '30002:5173'
+    volumes:
+      - /usr/mac398-app/node_modules
+      - ./:/usr/mac398-app
+    networks:
+      - mac398net
+
+networks:
+  mac398net:
+    driver: bridge
