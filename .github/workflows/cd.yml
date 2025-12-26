@@ -27,6 +27,12 @@ jobs:
         run: |
           gcloud auth configure-docker asia-east1-docker.pkg.dev
 
+      - name: Create .env file
+        run: |
+          echo "VITE_COUNTDOWN_TARGET=${{ secrets.VITE_COUNTDOWN_TARGET }}" >> .env
+          echo "VITE_COUNTDOWN_EVENT=${{ secrets.VITE_COUNTDOWN_EVENT }}" >> .env
+          echo "VITE_COUNTDOWN_TIMEZONE=${{ secrets.VITE_COUNTDOWN_TIMEZONE }}" >> .env
+
       - name: Build and Push Docker Image
         run: |
           docker build -t asia-east1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/mac398-app/frontend:${{ github.sha }} .

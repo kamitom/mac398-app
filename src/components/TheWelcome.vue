@@ -50,7 +50,7 @@
     <template #icon>
       <EcosystemIcon />
     </template>
-    <template #heading>Ecosystem 台鐵關山</template>
+    <template #heading>🇨🇦 Ecosystem 台鐵關山</template>
 
     Get official tools and libraries for your project:
     <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,

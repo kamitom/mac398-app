@@ -1,6 +1,6 @@
 services:
   mac398fe:
-    image: tom4dock/mac398fe:2.1
+    # image: tom4dock/mac398fe:2.1
     build:
       context: .
       dockerfile: Dockerfile.dev

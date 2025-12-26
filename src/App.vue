@@ -1,14 +1,17 @@
 <script setup lang="ts">
   import HelloWorld from './components/HelloWorld.vue'
   import TheWelcome from './components/TheWelcome.vue'
+  import CountDown from './components/CountDown.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
+    <img alt="Flag logo" class="logo" src="./assets/Flag_of_China_(1889–1912).svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="CI/CD真的實作成功?😊" />
+      <HelloWorld msg="🧑‍🎄 Cloud RUN! ☁️" v-if="false" />
+      <CountDown />
     </div>
   </header>
 

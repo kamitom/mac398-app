@@ -32,6 +32,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Create .env file
+        run: |
+          echo "VITE_COUNTDOWN_TARGET=${{ secrets.VITE_COUNTDOWN_TARGET }}" >> .env
+          echo "VITE_COUNTDOWN_EVENT=${{ secrets.VITE_COUNTDOWN_EVENT }}" >> .env
+          echo "VITE_COUNTDOWN_TIMEZONE=${{ secrets.VITE_COUNTDOWN_TIMEZONE }}" >> .env
+
       - name: Run unit tests
         run: npm run test:unit
 
