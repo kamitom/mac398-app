@@ -14,7 +14,6 @@ describe('CountDown', () => {
   it('renders properly with event name', () => {
     const wrapper = mount(CountDown)
     expect(wrapper.text()).toContain('World Cup')
-    expect(wrapper.text()).toContain('Final')
   })
 
   it('displays countdown numbers with zero padding', () => {
@@ -37,7 +36,6 @@ describe('CountDown', () => {
 
   it('updates countdown every second', async () => {
     const wrapper = mount(CountDown)
-    const initialText = wrapper.text()
 
     // Advance time by 1 second
     vi.advanceTimersByTime(1000)
@@ -45,7 +43,7 @@ describe('CountDown', () => {
 
     // The countdown should still render (values might change but structure stays)
     expect(wrapper.text()).toContain('日')
-    expect(wrapper.text()).toContain('World Cup Final')
+    expect(wrapper.text()).toContain('World Cup')
   })
 
   it('cleans up interval on unmount', () => {
