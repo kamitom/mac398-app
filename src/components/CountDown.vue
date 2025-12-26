@@ -39,7 +39,7 @@
     minute: '2-digit'
   })
 
-  let intervalId: number
+  let intervalId: ReturnType<typeof setInterval>
 
   onMounted(() => {
     updateCountdown()
