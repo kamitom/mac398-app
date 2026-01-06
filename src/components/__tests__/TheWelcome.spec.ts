@@ -8,7 +8,7 @@ describe('TheWelcome', () => {
     const wrapper = mount(TheWelcome)
 
     // 驗證關鍵文本內容存在
-    expect(wrapper.text()).toContain('Documentation')
+    expect(wrapper.text()).toContain('文件')
     expect(wrapper.text()).toContain('Tooling')
     expect(wrapper.text()).toContain('Ecosystem')
     expect(wrapper.text()).toContain('Community')
